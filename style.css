@@ -1,0 +1,909 @@
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    height: 100%;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: rgb(76, 183, 255); 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 200px;
+    z-index: 1;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu a {
+    padding: 10px;
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -200px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.logo1 {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.logo1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text1,
+.text2,
+.text3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    z-index: 1;
+}
+
+.text1 {
+    top: 500px;
+    left: 0;
+    right: 1000px;
+    font-size: 46px;
+}
+
+.text2 {
+    top: 700px;
+    left: 0;
+    right: 1080px;
+    font-size: 20px;
+}
+
+.text3 {
+    top: 725px;
+    left: 0;
+    right: 900px;
+    font-size: 20px;
+}
+
+.block {
+    position: absolute;
+    top: 970px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    width: 100%;
+    max-width: 1920px;
+    height: 200px;
+    z-index: 1;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.block-bottom {
+    background-color: white;
+    max-width: 100%;
+    height: 1000px;
+}
+
+.text4, .text5, .text6, .text7 {
+    color: white;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    z-index: 1;
+}
+
+.text4 {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text5 {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text6 {
+    position: absolute;
+    left: 520px;
+    top: 40px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text7 {
+    position: absolute;
+    left: 400px;
+    top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text4 > div {
+    color: yellow;
+    position: static;
+    margin-left: 10px;
+    left: 400px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.stick1, .stick2 {
+    background-color: white;
+    width: 1px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stick2 {
+    left: 800px;
+}
+
+.stick1 {
+    left: 1200px;
+}
+
+.contact, .number1, .number2, .sale {
+    color: white;
+}
+
+.contact {
+    position: absolute;
+    left: 820px;
+    top: 20px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.number1 {
+    position: absolute;
+    left: 860px;
+    top: 70px;
+    font-size: 25px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 10;
+}
+.number2 {
+    position: absolute;
+    left: 860px;
+    top: 110px;
+    font-size: 25px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 10;
+}
+.sale {
+    position: absolute;
+    left: 1360px;
+    top: 73px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sale div {
+    color: yellow;
+    position: absolute;
+    left: -100px;
+    top: -1;
+    font-size: 40px;
+    display: flex;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.text1,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text7,
+.contact,
+.number1,
+.number2,
+.sale,
+.about-the-hotel,
+.included, 
+.price, 
+.reviews, 
+.add-services,
+.button,
+.special-offers
+{
+    animation: slidein 1s ease forwards;
+}
+
+.block-white-bottom {
+    position: absolute;
+    top: 1170px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    max-width: 1920px;
+    height: 100px;
+    z-index: 1;
+}
+
+.about-the-hotel, .included, .price, .reviews, .add-services {
+    font-size: 20px;
+    margin: 15px;
+    transition: color 0.3s ease;
+}
+.about-the-hotel:hover, .included:hover, .price:hover, .reviews:hover, .add-services:hover {
+    color: rgb(76, 183, 255); 
+}
+
+.button {
+    background-color: rgb(255, 102, 0);
+    display: flex;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.7);
+}
+
+.special-offers {
+    color: rgb(255, 102, 0);
+    position: absolute;
+    display: flex;
+    margin-left: 170px;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.block-disnay {
+    width: 263px;
+    height: 337px;
+    background-color: white;
+    position: absolute;
+    top: 1500px;
+    margin-left: 250px;
+    transform: translate(-10%);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    border: -1px rgba(150, 150, 150, 0.644) solid;
+    box-shadow: 0 0 10px 5px rgba(150, 150, 150, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+
+.photo-disnay img {
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.block-disnay:hover {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.7);
+}
+
+.lager {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.block-disnay1 {
+    width: 263px;
+    height: 337px;
+    background-color: white;
+    position: absolute;
+    top: 1500px;
+    margin-left: -310px;
+    transform: translate(-10%);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    border: -1px rgba(150, 150, 150, 0.644) solid;
+    box-shadow: 0 0 10px 5px rgba(150, 150, 150, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+
+.photo-disnay1 img {
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.block-disnay1:hover {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.7);
+}
+
+.lager1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.block-disnay2 {
+    width: 263px;
+    height: 337px;
+    background-color: white;
+    position: absolute;
+    top: 1500px;
+    margin-left: 520px;
+    transform: translate(-10%);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    border: -1px rgba(150, 150, 150, 0.644) solid;
+    box-shadow: 0 0 10px 5px rgba(150, 150, 150, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+
+.photo-disnay2 img {
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.block-disnay2:hover {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.7);
+}
+
+.lager2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.block-disnay3 {
+    width: 263px;
+    height: 337px;
+    background-color: white;
+    position: absolute;
+    top: 1500px;
+    margin-left: 1350px;
+    transform: translate(-10%);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 42px;
+    border-top-right-radius: 42px;
+    border-bottom-right-radius: 42px;
+    border-bottom-left-radius: 42px;
+    border: -1px rgba(150, 150, 150, 0.644) solid;
+    box-shadow: 0 0 10px 5px rgba(150, 150, 150, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+
+.photo-disnay3 img {
+    width: 100%;
+    height: auto; 
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+}
+
+.block-disnay3:hover {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(255, 102, 0, 0.7);
+}
+
+.lager3 {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: stretch;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction: column; 
+    }
+
+    .menu > ul > li {
+        display: block; 
+    }
+
+    .menu a {
+        padding: 10px 0; 
+        height: auto;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: -250px; 
+        width: 60px;
+        height: 60px;
+    }
+
+    .text1 {
+        left: 200px;
+        top: 325px;
+        font-size: 26px; 
+    }
+
+    .text3 {
+        left: 350px;
+        top: 500px;
+        font-size: 18px;
+    }
+    .text4 {
+        left: 100px;
+        top: 10px;
+        font-size: 18px; 
+    }
+    .text5 {
+        left: 100px;
+        top: 40px;
+        font-size: 18px;
+    }
+    .text6 {
+        left: 170px;
+        top: 22px; 
+        font-size: 18px; 
+    }
+    .text7 {
+        left: 100px;
+        top: 60px; 
+        font-size: 18px;
+    }
+    .stick1 {
+        left: 300px;
+        top: 50px;
+        height: 100px;
+    }
+    .stick2 {
+        left: 500px;
+        top: 50px;
+        height: 100px;
+    }
+    .contact {
+        left: 300px;
+        top: -25px;
+        height: 100px;
+        font-size: 15px;
+    }
+    .number1 {
+        left: 315px;
+        top: 0px;
+        height: 100px;
+        font-size: 15px;
+    }
+    .number2 {
+        left: 315px;
+        top: 20px;
+        height: 100px;
+        font-size: 15px;
+    }
+    .sale {
+        left: 560px;
+        top: 0px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .sale div{
+        left: -60px;
+        font-size: 20px;
+    }
+    
+    .block {
+        top: 640px;
+        height: 100px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .block-bottom {
+        height: 600px;
+    }
+
+    .block-white-bottom {
+        top: 740px;
+        height: 60px;
+    }
+
+    .block-disnay, .block-disnay1{
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay3 {
+        top: 1000px;
+        left: -1250px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay {
+        top: 1000px;
+        left: 215px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay1 {
+        top: 1400px;
+        left: 415px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay2 {
+        top: 1400px;
+        left: -60px;
+        width: 263px;
+        height: 337px; 
+    }
+
+    .special-offers {
+        left: -100px;
+        top: 660px;
+        font-size: 40px;
+    }
+
+    .button {
+        width: 120px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 414px) {
+    body {
+        align-items: stretch; 
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu > ul > li {
+        display: block;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .logo {
+        margin-top: 10px;
+        margin-left: -100px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .text1 {
+        left: 170px;
+        top: 300px;
+        font-size: 20px;
+    }
+
+    .text3 {
+        left: 200px;
+        top: 450px;
+        font-size: 11px;/
+    }
+    .text4 {
+        left: 30px;
+        top: 10px;
+        font-size: 14px;
+    }
+    .text5 {
+        left: 30px;
+        top: 30px;
+        font-size: 14px;
+    }
+    .text6 {
+        left: 80px;
+        top: 16px;
+        font-size: 14px;
+    }
+    .text7 {
+        left: 30px;
+        top: 50px;
+        font-size: 14px;
+    }
+    .stick1 {
+        left: 180px;
+        top: 50px;
+        height: 100px;
+    }
+    .stick2 {
+        left: 300px;
+        top: 50px;
+        height: 100px;
+    }
+    .contact {
+        left: 175px;
+        top: -30px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .number1 {
+        left: 190px;
+        top: -10px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .number2 {
+        left: 190px;
+        top: 10px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .sale {
+        left: 320px;
+        top: 0px;
+        height: 100px;
+        font-size: 12px;
+    }
+    .sale div{
+        top: 25px;
+        left: -35px;
+        font-size: 15px;
+    }
+    
+    .block {
+        top: 500px;
+        height: 80px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    .block-bottom {
+        height: 600px;
+    }
+
+    .block-white-bottom {
+        top: 580px;
+        height: 60px;
+    }
+    .about-the-hotel {
+        font-size: 12px;
+    }
+    .included {
+        font-size: 12px;
+    }
+    .price {
+        font-size: 12px;
+    }
+    .reviews {
+        font-size: 12px;
+    }
+    .add-services {
+        font-size: 12px;
+    }
+    .add-services {
+        font-size: 12px;
+    }
+
+    .block-disnay, .block-disnay1{
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay3 {
+        top: 700px;
+        left: -1250px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay {
+        top: 1100px;
+        left: -150px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay1 {
+        top: 1500px;
+        left: 405px;
+        width: 263px;
+        height: 337px; 
+    }
+    .block-disnay2 {
+        top: 1900px;
+        left: -425px;
+        width: 263px;
+        height: 337px; 
+    }
+
+    .special-offers {
+        left: -50px;
+        top: 460px;
+        font-size: 20px;
+    }
+
+    .button {
+    margin-left: 20px;
+    width: 150px;
+    height: 25px;
+    font-size: 10px;
+    }
+}
